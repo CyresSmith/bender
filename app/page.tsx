@@ -12,9 +12,9 @@ export default function Home() {
   const onClick = () => alert("Вже несемо!");
 
   return (
-    <div className="fle flex col justify-center py-10">
-      <div className="grid grid-cols-2 gap-10 p-10 rounded-[calc(theme(space.10)+theme(radius-3xl))] bg-gray-500 max-w-5xl">
-        <div className="h-full aspect-square bg-background rounded-3xl">
+    <div className=" @container fle flex col justify-center p-5 @3xl:p-10">
+      <div className="grid-cols-1 grid @3xl:grid-cols-2 @3xl:p-10 gap-10 p-5  rounded-[calc(theme(space.5)+theme(radius-3xl))] @3xl:rounded-[calc(theme(space.10)+theme(radius-3xl))] bg-gray-500 max-w-5xl">
+        <div className="max-w-full aspect-square bg-background rounded-3xl">
           <Canvas camera={{ position: [-3, 3, 4], fov: 45 }}>
             <ambientLight intensity={0.5} />
             <directionalLight position={[5, 5, 5]} intensity={0.9} />
@@ -23,7 +23,7 @@ export default function Home() {
           </Canvas>
         </div>
         <div className="flex flex-col gap-2">
-          <div className=" flex justify-between mb-5">
+          <div className="flex flex-col gap-2 @xl:flex-row justify-between mb-5">
             <p className="text-amber-300 font-bold text-5xl">49 200 ₴</p>
 
             <button
