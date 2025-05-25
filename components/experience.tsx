@@ -1,4 +1,4 @@
-import { Center, OrbitControls, Stage } from "@react-three/drei";
+import { OrbitControls, Stage } from "@react-three/drei";
 import { color } from "three/tsl";
 
 import { Memorial } from "./Memorial";
@@ -17,7 +17,7 @@ const Experience = () => {
         }}
         adjustCamera={2}
       >
-          <Memorial color={color} />}
+        <Memorial color={color} />
       </Stage>
 
       <OrbitControls
