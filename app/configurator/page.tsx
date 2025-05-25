@@ -9,7 +9,7 @@ import Selection from "@/components/selection";
 const Page = () => {
   return (
     <ConfiguratorProvider>
-      <div className="@container relative flex h-screen justify-center p-5 @3xl:p-10 bg-gray-300">
+      <div className="@container relative flex flex-col items-center h-screen justify-center p-5 @3xl:p-10 bg-gray-300">
         <Selection />
         <Canvas
           gl={{ antialias: false, preserveDrawingBuffer: true }}

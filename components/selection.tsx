@@ -13,9 +13,9 @@ const Selection = () => {
     useConfigurator();
 
   return (
-    <div className="absolute top-5 right-5 z-10 flex w-full max-w-sm flex-col gap-2">
+    <div className="absolute top-5 right-5 z-10 flex justify-center w-full max-w-2xs flex-col gap-2 rounded-3xl bg-white p-5 shadow-lg">
       <Select defaultValue={top} onValueChange={setTop}>
-        <SelectTrigger className="w-[180px]">
+        <SelectTrigger>
           <SelectValue placeholder="Пам&#39;ятник" />
         </SelectTrigger>
 
@@ -27,7 +27,7 @@ const Selection = () => {
       </Select>
 
       <Select defaultValue={bottom} onValueChange={setBottom}>
-        <SelectTrigger className="w-[180px]">
+        <SelectTrigger>
           <SelectValue placeholder="Надгробок" />
         </SelectTrigger>
 
@@ -50,7 +50,7 @@ const Selection = () => {
 
       {vase1 && (
         <Select defaultValue={vase1} onValueChange={setVase1}>
-          <SelectTrigger className="w-[180px]">
+          <SelectTrigger>
             <SelectValue placeholder="Розміщення вази" />
           </SelectTrigger>
 
@@ -76,7 +76,7 @@ const Selection = () => {
 
       {vase2 && (
         <Select defaultValue={vase2} onValueChange={setVase2}>
-          <SelectTrigger className="w-[180px]">
+          <SelectTrigger>
             <SelectValue placeholder="Розміщення лапмадки" />
           </SelectTrigger>
 
